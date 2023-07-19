@@ -9,8 +9,6 @@ app.use(express.json());
 app.use(cors());
 const port =  process.env.PORT || 3000;
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json())
 
 async function dbConnection() {
     try {
